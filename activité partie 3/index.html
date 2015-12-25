@@ -28,11 +28,26 @@
 				-moz-background-size: cover;
 				background-size: cover;
 				-o-background-size: cover;
+				padding: 0;
+				marging: 0;
 			}
 
 			/* Images */
 			img {
 				width: 100%;
+				margin-left: 0;
+				margin-right: 0;
+			}
+			
+			/* container */
+			.container {
+				padding: 0;
+				marging: 0;
+			}
+			
+			/* header */
+			header {
+				height: 50px;
 			}
 
 		</style>
@@ -40,94 +55,93 @@
 	</head>
 
 	<body id="page-top">
+		<div class="container" >
+			<header>
+				<!-- Navigation
+				================================================== -->
+				<div class="navbar navbar-inverse">
+					 <ul class="nav navbar-nav">
+						<li><a href="#page-top">La maison de l'architecture</a></li>
+						<li class="hidden"><a href="#page-top"></a></li>
+						<li><a href="#accueil">Accueil</a></li>
+						<li><a href="#qui">Qui sommes-nous ?</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</header>
 
-		<header>
-
-			<!-- Navigation
+			<!-- Caroussel
 			================================================== -->
-			<a href="#page-top">La maison de l'architecture</a>
-			<ul>
-				<li class="hidden"><a href="#page-top"></a></li>
-				<li><a href="#accueil">Accueil</a></li>
-				<li><a href="#qui">Qui sommes-nous ?</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
+			<img src="assets/img/archi1.jpg" alt="Architecture">
+			<img src="assets/img/archi2.jpg" alt="Architecture">
+			<img src="assets/img/archi3.jpg" alt="Architecture">
+			<img src="assets/img/archi4.jpg" alt="Architecture">
 
-		</header>
+			<!-- Corps de page déjà codé
+			================================================== -->
+			<!--<div class="container">-->
 
-		<!-- Caroussel
-		================================================== -->
-		<img src="assets/img/archi1.jpg" alt="Architecture">
-		<img src="assets/img/archi2.jpg" alt="Architecture">
-		<img src="assets/img/archi3.jpg" alt="Architecture">
-		<img src="assets/img/archi4.jpg" alt="Architecture">
+				<div class="jumbotron row" id="accueil">
+					<h1 class="text-center">Bienvenue dans notre espace</h1>
+					<img class="col-sm-12 col-md-5" src="assets/img/accueil.jpg" alt="Accueil">     
+					<p class="col-sm-12 col-md-7">Nous sommes spécialisés dans tous types de constructions et nous prenons en charge les projets de A à Z. 
+					Vous pouvez nous confier en toute confiance des projets de toutes dimensions, des plus simples aux plus osés. Notre équipe est efficace, 
+					réactive et compétente. Nous entretenons toujours un dialogue de tous les instants avec nos clients. 
+					Bien qu'à la pointe de notre activité nous pratiquons des prix rigoureux et adaptés à tous les budgets.</p>
+				</div>
 
-		<!-- Corps de page déjà codé
-		================================================== -->
-		<div class="container">
+				<div class="jumbotron row" id="qui">
+					<h1 class="text-center">Une équipe efficace</h1>
+					<img class="col-sm-12 col-md-5 col-md-push-7" src="assets/img/equipe.jpg" alt="Equipe"> 
+					<p class="col-sm-12 col-md-7 col-md-pull-5">Notre équipe est jeune, experte et motivée. Notre entreprise est certifiée ISO 9001. Nous cherchons en permanence à améliorer la qualité de nos services et nous sommes à l'écoute de nos clients.</p>
+				</div>
 
-			<div class="jumbotron row" id="accueil">
-				<h1 class="text-center">Bienvenue dans notre espace</h1>
-				<img class="col-sm-12 col-md-5" src="assets/img/accueil.jpg" alt="Accueil">     
-				<p class="col-sm-12 col-md-7">Nous sommes spécialisés dans tous types de constructions et nous prenons en charge les projets de A à Z. 
-				Vous pouvez nous confier en toute confiance des projets de toutes dimensions, des plus simples aux plus osés. Notre équipe est efficace, 
-				réactive et compétente. Nous entretenons toujours un dialogue de tous les instants avec nos clients. 
-				Bien qu'à la pointe de notre activité nous pratiquons des prix rigoureux et adaptés à tous les budgets.</p>
-			</div>
+				<div class="jumbotron" id="contact">
+					<h1 class="text-center">Un message pour nous ?</h1>
+					<form class="row">
+						<div class="form-group col-lg-4">
+							<input type="email" class="form-control" placeholder="Votre email">
+						</div>
+						<div class="form-group col-lg-8">
+							<textarea class="form-control" rows="3" placeholder="Votre message"></textarea>
+						</div>
+						<div class="form-group col-lg-12">
+							<button type="submit" class="btn btn-default pull-right">Envoyer</button>
+						</div>
+					</form>
+				</div>
+			<!--</div>-->
 
-			<div class="jumbotron row" id="qui">
-				<h1 class="text-center">Une équipe efficace</h1>
-				<img class="col-sm-12 col-md-5 col-md-push-7" src="assets/img/equipe.jpg" alt="Equipe"> 
-				<p class="col-sm-12 col-md-7 col-md-pull-5">Notre équipe est jeune, experte et motivée. Notre entreprise est certifiée ISO 9001. Nous cherchons en permanence à améliorer la qualité de nos services et nous sommes à l'écoute de nos clients.</p>
-			</div>
+			<!-- Pied de page
+			================================================== -->
+			<footer>
+				<a class="btn btn-default" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+				<a class="btn btn-default" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+				<a class="btn btn-default" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+				<a class="btn btn-default" href="#"><i class="fa fa-flickr fa-2x"></i></a>
+				<a class="btn btn-default" href="#"><i class="fa fa-spotify fa-2x"></i></a>
+			</footer>
 
-			<div class="jumbotron" id="contact">
-				<h1 class="text-center">Un message pour nous ?</h1>
-				<form class="row">
-					<div class="form-group col-lg-4">
-						<input type="email" class="form-control" placeholder="Votre email">
-					</div>
-					<div class="form-group col-lg-8">
-						<textarea class="form-control" rows="3" placeholder="Votre message"></textarea>
-					</div>
-					<div class="form-group col-lg-12">
-						<button type="submit" class="btn btn-default pull-right">Envoyer</button>
-					</div>
-				</form>
-			</div>
+			<!-- jQuery -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+			<!-- Javascript de Bootstrap -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-		</div>
-
-		<!-- Pied de page
-		================================================== -->
-		<footer>
-			<a class="btn btn-default" href="#"><i class="fa fa-twitter fa-2x"></i></a>
-			<a class="btn btn-default" href="#"><i class="fa fa-facebook fa-2x"></i></a>
-			<a class="btn btn-default" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-			<a class="btn btn-default" href="#"><i class="fa fa-flickr fa-2x"></i></a>
-			<a class="btn btn-default" href="#"><i class="fa fa-spotify fa-2x"></i></a>
-		</footer>
-
-		<!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<!-- Javascript de Bootstrap -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-		<script>
-		  // Scrollspy fluide
-			$(function () {
-				$('header a').on('click', function(e) {
-					e.preventDefault();
-					var hash = this.hash;
-					$('html, body').animate({
-						scrollTop: $(this.hash).offset().top
-					}, 1000, function(){
-					window.location.hash = hash;
+			<script>
+			  // Scrollspy fluide
+				$(function () {
+					$('header a').on('click', function(e) {
+						e.preventDefault();
+						var hash = this.hash;
+						$('html, body').animate({
+							scrollTop: $(this.hash).offset().top
+						}, 1000, function(){
+						window.location.hash = hash;
+						});
 					});
 				});
-			});
-		</script>
-
+			</script>
+		</div>
 	</body>
 
 </html>
