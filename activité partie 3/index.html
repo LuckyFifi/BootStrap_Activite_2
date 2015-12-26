@@ -150,11 +150,13 @@
 			<!-- Pied de page
 			================================================== -->
 			<footer>
-				<a class="btn btn-default" href="#"><i class="fa fa-twitter fa-2x"></i></a>
-				<a class="btn btn-default" href="#"><i class="fa fa-facebook fa-2x"></i></a>
-				<a class="btn btn-default" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-				<a class="btn btn-default" href="#"><i class="fa fa-flickr fa-2x"></i></a>
-				<a class="btn btn-default" href="#"><i class="fa fa-spotify fa-2x"></i></a>
+				<div class="row text-center">
+					<a class="btn btn-default" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+					<a class="btn btn-default" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+					<a class="btn btn-default" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+					<a class="btn btn-default" href="#"><i class="fa fa-flickr fa-2x"></i></a>
+					<a class="btn btn-default" href="#"><i class="fa fa-spotify fa-2x"></i></a>
+				</div>
 			</footer>
 
 			<!-- jQuery -->
@@ -170,7 +172,7 @@
 						var hash = this.hash;
 						$('html, body').animate({
 							scrollTop: $(this.hash).offset().top
-						}, 1000, function(){
+						}, 1500, function(){
 						window.location.hash = hash;
 						});
 					});
